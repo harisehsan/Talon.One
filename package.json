@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test:chrome": "cypress run --browser chrome --spec 'cypress/e2e/purchase.spec.cy.ts'"
+    "test:chrome": "cypress run --browser chrome --spec 'cypress/e2e/purchase.spec.cy.ts'",
+    "open:report": "start cypress\\reports\\index.html"
   },
   "keywords": [],
   "author": "",
