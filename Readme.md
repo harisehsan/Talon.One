@@ -9,7 +9,7 @@ I have configured the tests to be able to run in the GitHub Action (CI/CD). The 
 
 1. Go to the link: https://github.com/harisehsan/Talon.One/actions/runs/16977208497/job/48129310203
 2. Login to GitHub with your account. If no account, then please sign up and login on GitHub.
-3. Click on "Re-run all jobs" button on top right corner of webpage. So it will re-run the tests again in pipeline.
+3. Click on `Re-run all jobs` button on top right corner of webpage. So it will re-run the tests again in pipeline.
 4. Wait for steps to complete. It will show in yellow color (circle moving) if it is in process.
 5. When you see the following:
    a. Tick in Green Circle (when all the tests are passed and every thing goes as expected).
