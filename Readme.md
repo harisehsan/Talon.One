@@ -24,7 +24,7 @@ There are following steps to run the test locally in your computer.
 1. Open terminal in (Linux or Mac OS) OR Powershell in windows. 
 2. Run the the command `node -v`. if you see the node version then it's fine. Otherwise, Download and install Node.js (https://www.youtube.com/watch?v=lt5D2EWZMN0)
 2. Run the command to clone the repo `git clone https://github.com/harisehsan/Talon.One.git`
-3. goto the cloned project root directory `cd <projectName>`. Replace the <projectName> with real directory name before run command.
+3. goto the cloned project root directory `cd <projectName>`. Replace the `<projectName>` with real directory name before command execution.
 4. To check if you are in the correct directory. use command `dir` in windows powershell OR `ls` in Linux or mac.
    a. Must see `package.json` file. if yes, then you are in the correct directory. Otherwise, use `cd` command to goto correct directory.
 5. Run the command `npm install`. Wait for it to complete.
@@ -40,7 +40,7 @@ If you see the file `purchase.spec.cy.ts` in `cypress/e2e/` directory:
 There are totally 3 tests are automated.
 1. First test is to perform login with credentials which are specified in the `cypress.env.json`. To verify that user is correctly loggedIn or not.
 2. Second test is to add product in cart and verify that added product is correctly shown in cart or not. In my case I used the product `Macbook air`
-3. Third test is used to complete the purchase process of the added item in cart by filling user information. Verify that either the test process is successfully completed or not.
+3. Third test is used to complete the purchase process of the added item in cart by filling user information. Verify that either the purchase process is successfully completed or not.
 
 ### Disclosure of the Use of AI tool
 
