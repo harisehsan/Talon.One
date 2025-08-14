@@ -33,12 +33,18 @@ jobs:
         env:
           CI: true
 
-      - name: Upload Cypress artifacts (on failure)
+      - name: Upload Mochawesome report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-report
+          path: cypress/reports
+          if-no-files-found: ignore
+
+      - name: Upload screenshots (on failure)
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: cypress-artifacts
-          path: |
-            cypress/screenshots
-            cypress/reports
+          name: cypress-screenshots
+          path: cypress/screenshots
           if-no-files-found: ignore
