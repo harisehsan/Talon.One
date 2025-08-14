@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",            // <-- Required for tsconfig-paths to work
+    "paths": {
+      "@pages/*": [
+        "cypress/support/pages/*"
+      ]
+    },
+    "target": "ES6",
+    "module": "commonjs",
+    "types": ["cypress"],
+    "lib": ["es6", "dom"],
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": ["**/*.ts"]
+}
