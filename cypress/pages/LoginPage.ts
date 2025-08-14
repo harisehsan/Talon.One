@@ -23,7 +23,7 @@ export class LoginPage {
 
     fillLogin(username: string, password: string) {
         this.getLoginBtn().click();
-        this.getLoginUsername().should('be.visible', { timeout: 10000 }).clear().type(username);
+        this.getLoginUsername().should('be.visible', { timeout: 10000 }).clear().type(username, { force: true });
         this.getLoginPassword().click().type(password);
     }
 
